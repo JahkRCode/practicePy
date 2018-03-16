@@ -115,6 +115,4 @@ def main_options(ip_list, url_list, response_code_list):
     except ValueError as e:
         print(e)
 
-## A README file explaining how to use the tool, what its dependencies and any assumptions you made while writing it
-
 get_log_file(apache_log_file)
