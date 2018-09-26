@@ -9,7 +9,6 @@
 
 import numpy as np
 
-
 class NeuralNetwork(object):
     def __init__(self, input_nodes, hidden_nodes, output_nodes, learning_rate):
         # Set number of nodes in input, hidden and output layers.
@@ -39,7 +38,6 @@ class NeuralNetwork(object):
         #### return 0  # Replace 0 with your sigmoid calculation here
         #self.activation_function = sigmoid
                     
-
     def train(self, features, targets):
         ''' Train the network on batch of features and targets. 
         
@@ -60,7 +58,6 @@ class NeuralNetwork(object):
             delta_weights_i_h, delta_weights_h_o = self.backpropagation(final_outputs, hidden_outputs, X, y, 
                                                                         delta_weights_i_h, delta_weights_h_o)
         self.update_weights(delta_weights_i_h, delta_weights_h_o, n_records)
-
 
     def forward_pass_train(self, X):
         ''' Implement forward pass here 
